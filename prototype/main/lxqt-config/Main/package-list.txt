@@ -19,7 +19,7 @@ lxqt-globalkeys
 
 
 ##
-## ## Package / picom
+## ## Package / Compositor
 ##
 
 picom
@@ -36,14 +36,21 @@ picom
 ## > for command `mate-volume-control` or `mate-volume-control-status-icon`
 ##
 
-mate-media
+#mate-media
 
 
 ##
 ## > for command `pavucontrol`
 ##
 
-pavucontrol
+#pavucontrol
+
+
+##
+## > for command `pavucontrol-qt`
+##
+
+pavucontrol-qt
 
 
 ##
@@ -66,7 +73,7 @@ pamixer
 ## ## Package / Qt / Style
 ##
 
-qt5ct
+#qt5ct
 #qt6ct
 kvantum
 qt5-qtstyleplugins
