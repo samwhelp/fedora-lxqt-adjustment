@@ -4,14 +4,14 @@ set -e
 
 
 ################################################################################
-### Head: labwc
+### Head: lxqt
 ##
 
-labwc_asset_install () {
+lxqt_asset_install () {
 
 	echo
 	echo "##"
-	echo "## Asset: labwc"
+	echo "## Asset: lxqt"
 	echo "##"
 	echo
 
@@ -25,7 +25,7 @@ labwc_asset_install () {
 
 
 ##
-### Tail: labwc
+### Tail: lxqt
 ################################################################################
 
 
@@ -35,7 +35,7 @@ labwc_asset_install () {
 
 main_asset_install () {
 
-	labwc_asset_install
+	lxqt_asset_install
 
 }
 

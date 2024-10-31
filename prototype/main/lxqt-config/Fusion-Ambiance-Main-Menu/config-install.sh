@@ -4,39 +4,39 @@ set -e
 
 
 ################################################################################
-### Head: labwc
+### Head: lxqt
 ##
 
-labwc_config_run_pre () {
+lxqt_config_run_pre () {
 
-	labwc_service_stop
-
-
-	return 0
-
-}
-
-labwc_config_run_post () {
-
-	labwc_service_start
+	lxqt_service_stop
 
 
 	return 0
 
 }
 
-labwc_service_stop () {
+lxqt_config_run_post () {
 
-	labwc_service_stop_xfconfd
-
-	#labwc_service_stop_xfsettingsd
+	lxqt_service_start
 
 
 	return 0
 
 }
 
-labwc_service_stop_xfconfd () {
+lxqt_service_stop () {
+
+	lxqt_service_stop_xfconfd
+
+	#lxqt_service_stop_xfsettingsd
+
+
+	return 0
+
+}
+
+lxqt_service_stop_xfconfd () {
 
 	if killall -9 xfconfd; then
 		return 0
@@ -47,7 +47,7 @@ labwc_service_stop_xfconfd () {
 
 }
 
-labwc_service_stop_xfsettingsd () {
+lxqt_service_stop_xfsettingsd () {
 
 	if killall -9 xfsettingsd; then
 		return 0
@@ -58,30 +58,30 @@ labwc_service_stop_xfsettingsd () {
 
 }
 
-labwc_service_start () {
+lxqt_service_start () {
 
 
 	return 0
 
 }
 
-labwc_config_install () {
+lxqt_config_install () {
 
 	echo
 	echo "##"
-	echo "## Config: labwc"
+	echo "## Config: lxqt"
 	echo "##"
 	echo
 
 
-	labwc_config_install_by_dir
+	lxqt_config_install_by_dir
 
 
 	echo
 
 }
 
-labwc_config_install_by_dir () {
+lxqt_config_install_by_dir () {
 
 
 	echo
@@ -97,7 +97,7 @@ labwc_config_install_by_dir () {
 }
 
 ##
-### Tail: labwc
+### Tail: lxqt
 ################################################################################
 
 
@@ -107,11 +107,11 @@ labwc_config_install_by_dir () {
 
 main_config_install () {
 
-	labwc_config_run_pre
+	lxqt_config_run_pre
 
-	labwc_config_install
+	lxqt_config_install
 
-	labwc_config_run_post
+	lxqt_config_run_post
 
 }
 
