@@ -10,14 +10,14 @@ has_children: false
 
 
 
-## Lxde
+## Lxqt
 
 | Link |
 | ---- |
-| [lxde](https://www.lxde.org/) |
-| GitHub / [lxde](https://github.com/lxde) |
 | [lxqt](https://lxqt-project.org/) |
 | GitHub / [lxqt](https://github.com/lxqt) |
+| [lxde](https://www.lxde.org/) |
+| GitHub / [lxde](https://github.com/lxde) |
 
 
 
